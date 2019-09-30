@@ -22,7 +22,7 @@ contract DirectPurchase {
 	uint256 _amount,
         bytes32 _reference1,
 	bytes32 indexed _reference2
-    )
+    );
 
     /**
     * @dev DirectPurchase Initializer
