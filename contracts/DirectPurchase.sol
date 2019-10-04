@@ -38,10 +38,10 @@ contract DirectPurchase {
     }
 
     function sendTokenAndLog(
-	address to,
-	uint256 amount,
-	bytes32 reference1,
-	bytes32 reference2) public {
+        address to,
+        uint256 amount,
+        bytes32 reference1,
+        bytes32 reference2) public {
         token.transferFrom(msg.sender, to, amount);
         emit TokenSent(msg.sender, to, amount, reference1, reference2);
     }
